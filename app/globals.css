@@ -19,3 +19,141 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #fc5200;
+  color: white;
+}
+
+button:hover {
+  background-color: #e64a00;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  padding: 1rem;
+  margin: 0.5rem 0;
+  background: #f5f5f5;
+  border-radius: 4px;
+}
+
+.activity-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.activity-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.back-button {
+  margin-bottom: 2rem;
+  background: #666;
+}
+
+.activity-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.activity-link:hover {
+  background: #eee;
+}
+
+.map-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-top: 1rem;
+}
+
+.error-container {
+  padding: 1rem;
+  background: #ffe6e6;
+  border: 1px solid #ff9999;
+  border-radius: 4px;
+  color: #cc0000;
+}
+
+.loading {
+  padding: 1rem;
+  text-align: center;
+  color: #666;
+}
+
+.activities-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.activity-item {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.activity-item:hover {
+  transform: translateY(-2px);
+}
+
+.activity-link {
+  padding: 1.5rem;
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.activity-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.activity-type {
+  background: #fc5200;
+  color: white;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+}
+
+.activity-details {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1rem;
+  color: #666;
+}
+
+.activity-details p {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
